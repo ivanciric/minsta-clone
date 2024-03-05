@@ -29,16 +29,12 @@ const Header = () => {
         />
       </button>
       <div className="flex gap-4">
-        {!isConnected ? (
-          <button onClick={() => openModal("default")}>About</button>
-        ) : null}
 
         {isConnected ? (
           <button onClick={handleSignout}> Logout</button>
         ) : (
           <button onClick={handleSignIn}> Login</button>
         )}
-        <button onClick={() => push("/leaderboard")}>Leaderboard</button>
       </div>
     </div>
   );
@@ -54,16 +50,12 @@ const Header = () => {
               </button>
             </div>
             <div className="flex gap-4">
-              {!isConnected ? (
-                <button onClick={() => openModal("default")}>About</button>
-              ) : null}
 
               {isConnected ? (
                 <button onClick={handleSignout}> Logout</button>
               ) : (
                 <button onClick={handleSignIn}> Login</button>
               )}
-              <button onClick={() => push("/leaderboard")}>Leaderboard</button>
             </div>
           </div>
         );

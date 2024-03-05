@@ -35,35 +35,9 @@ const Footer = () => {
   const renderFooterButtons = () => {
     const { isClosed } = constants;
 
-    switch (pathname) {
-      case "/":
-        return !isClosed ? (
-          <footer className="fixed bottom-0 left-0 flex w-full items-end justify-center bg-primary h-16">
-            <FooterButton
-              onClick={
-                isConnected ? () => push("/camera") : () => openModal("default")
-              }
-            />
-          </footer>
-        ) : null;
-      case "/leaderboard":
-        return !isClosed ? (
-          <footer className="fixed bottom-0 left-0 flex w-full items-end justify-center bg-primary h-16">
-            <FooterButton
-              onClick={
-                isConnected ? () => push("/camera") : () => openModal("default")
-              }
-            />
-          </footer>
-        ) : null;
-      case "/camera":
-        return null;
-      default:
-        return null;
-    }
+    
   };
 
-  return renderFooterButtons();
 };
 
 export default Footer;
