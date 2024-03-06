@@ -48,7 +48,7 @@
 :root {
           --primary: #F3F4F8;
           --secondary: #000;
-          --mainBg: #FFFFFF;
+          --mainBg: #rgba(0, 0, 0, 0.88);
           --gradOne: #4472ad;
           --gradTwo: #009dea;
           --cardOne: #E8EAF0;

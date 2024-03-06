@@ -30,11 +30,6 @@ const Header = () => {
       </button>
       <div className="flex gap-4">
 
-        {isConnected ? (
-          <button onClick={handleSignout}> Logout</button>
-        ) : (
-          <button onClick={handleSignIn}> Login</button>
-        )}
       </div>
     </div>
   );
@@ -51,11 +46,7 @@ const Header = () => {
             </div>
             <div className="flex gap-4">
 
-              {isConnected ? (
-                <button onClick={handleSignout}> Logout</button>
-              ) : (
-                <button onClick={handleSignIn}> Login</button>
-              )}
+             
             </div>
           </div>
         );
